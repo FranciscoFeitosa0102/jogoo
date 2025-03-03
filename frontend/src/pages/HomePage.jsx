@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SalesPage from '../SalesPage';
+import SalesPage from './SalesPage';
 import Game from '../components/Game';
 
 function HomePage() {
