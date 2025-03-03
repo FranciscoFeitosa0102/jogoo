@@ -91,7 +91,7 @@ npm install -g pm2
 echo "Clonando o repositório..."
 sudo mkdir -p /var/www/gamifica_complete_project
 sudo chown $USER:$USER /var/www/gamifica_complete_project
-git clone https://github.com/FranciscoFeitosa0102/game.git /var/www/gamifica_complete_project
+git clone https://github.com/FranciscoFeitosa0102/jogoo.git /var/www/gamifica_complete_project
 cd /var/www/gamifica_complete_project
 
 # Instalar dependências do projeto
