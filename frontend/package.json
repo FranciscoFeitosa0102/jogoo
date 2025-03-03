@@ -8,7 +8,9 @@
     "react-router-dom": "^6.0.0",
     "tailwindcss": "^3.0.0",
     "axios": "^0.21.1",
-    "react-scripts": "^4.0.0"
+    "react-scripts": "^5.0.1",  // Atualizado para a versão mais recente
+    "autoprefixer": "^10.0.0",  // Movido para dependencies
+    "postcss": "^8.0.0"          // Movido para dependencies
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,8 +19,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.0",
-    "postcss": "^8.0.0"
+    // Outras dependências de desenvolvimento, se necessário
   }
 }
-
