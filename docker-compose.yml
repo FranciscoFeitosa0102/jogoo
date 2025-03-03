@@ -1,11 +1,10 @@
-version: '3'
 version: '3.8'
 
 services:
   frontend:
     build: ./frontend
     ports:
-      - "8080:8080" #CORREÇÃO: O correto é 8080:8080, o front expõe na porta 8080
+      - "8080:8080"
     volumes:
       - ./frontend:/usr/src/app
     networks:
@@ -36,7 +35,8 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./nginx-config:/etc/nginx/conf.d #CORREÇÃO: Aqui foi corrigido para montar toda a pasta
+      - ./nginx-config:/etc/nginx/conf.d
+    command: ["nginx", "-g", "daemon off;", "-s", "reload"]
     depends_on:
       - frontend
       - backend
@@ -50,4 +50,3 @@ networks:
 volumes:
   mongo_data:
     driver: local
-
